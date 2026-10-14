@@ -1,0 +1,19 @@
+.testimonials {
+  max-width: 1200px;
+  padding: 60px 24px;
+  margin: auto;
+}
+.testimonials__review {
+  margin: 0 0 24px;
+}
+.testimonials__quote {
+  margin: 0 0 12px;
+  line-height: 1.8;
+}
+.testimonials__author {
+  font-weight: 600;
+}
+.testimonials__source {
+  margin-left: 15px;
+  color: var(--teal-dark);
+}

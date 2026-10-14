@@ -1,0 +1,93 @@
+.about {
+  max-width: 1280px;
+  margin: auto;
+  padding: 100px 40px;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  gap: 95px;
+  align-items: center;
+}
+.about__identity {
+  background: #f3f7f1;
+  border-radius: 12px 100px 12px 12px;
+  padding: 45px;
+  position: relative;
+}
+.about__logo {
+  width: 100px;
+  height: auto;
+  border-radius: 7px;
+}
+.about__philosophy {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4vw, 55px);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  margin: 35px 0;
+}
+.about__accent {
+  color: var(--teal-dark);
+}
+.about__signature {
+  padding-top: 25px;
+  border-top: 1px solid #cdded3;
+}
+.about__name {
+  display: block;
+  font-size: 17px;
+  font-weight: 650;
+}
+.about__credential {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 7px;
+}
+.about__paragraph {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 23px 0;
+}
+.about__feature {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 18px 0;
+  color: var(--teal-dark);
+}
+.about__feature-title {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 650;
+}
+.about__feature-text {
+  display: block;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.about__link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .about {
+    gap: 40px;
+  }
+  .about__identity {
+    padding: 32px;
+  }
+}
+@media (max-width: 650px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+    gap: 45px;
+  }
+  .about__philosophy {
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,231 @@
+.hero {
+  background: linear-gradient(110deg, #f3f8f5, #f9fbf8);
+}
+.hero__inner {
+  max-width: 1280px;
+  margin: auto;
+  padding: 75px 40px 80px;
+  display: grid;
+  grid-template-columns: 1.04fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--red);
+}
+.hero__heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(44px, 4.6vw, 66px);
+  line-height: 1.075;
+  letter-spacing: -0.045em;
+  margin: 24px 0;
+}
+.hero__accent {
+  color: var(--teal-dark);
+  font-weight: 400;
+}
+.hero__description {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #3c5c56;
+  max-width: 440px;
+  margin: 0 0 16px;
+}
+.hero__detail {
+  max-width: 440px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 29px;
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.hero__assurance {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: #54736b;
+  font-size: 11px;
+  margin-top: 25px;
+}
+.hero__visual {
+  position: relative;
+  padding: 5px 5px 30px;
+}
+.hero__photo-wrap {
+  border-radius: 115px 12px 12px 12px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1.08;
+  background: #698880;
+}
+.hero__photo-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 25%, #102c2bd9);
+}
+.hero__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__photo-caption {
+  position: absolute;
+  bottom: 65px;
+  left: 34px;
+  z-index: 1;
+  color: #fff;
+}
+.hero__caption-label {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.17em;
+  margin-bottom: 13px;
+}
+.hero__caption-title {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+.hero__care-card {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  position: absolute;
+  right: -13px;
+  bottom: 0;
+  background: #fff;
+  border: 1px solid #dfebe4;
+  box-shadow: 0 8px 30px #183d3c0d;
+  padding: 20px 24px;
+  border-radius: 9px;
+}
+.hero__care-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #faedef;
+  color: var(--red);
+  border-radius: 50%;
+}
+.hero__care-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+}
+.hero__care-description {
+  display: block;
+  font-size: 11px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+.hero__ornament {
+  position: absolute;
+  top: -25px;
+  right: -21px;
+  font-size: 76px;
+  color: var(--teal);
+  line-height: 1;
+}
+.hero__trust {
+  border-top: 1px solid #d9e7df;
+  max-width: 1200px;
+  margin: auto;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 22px;
+}
+.hero__trust-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (max-width: 1040px) {
+  .hero__inner {
+    gap: 35px;
+    padding: 60px 35px;
+  }
+  .hero__heading {
+    font-size: 49px;
+  }
+  .hero__photo-wrap {
+    aspect-ratio: 0.83;
+  }
+}
+@media (max-width: 760px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    padding: 45px 24px;
+    gap: 38px;
+  }
+  .hero__heading {
+    font-size: clamp(43px, 8vw, 60px);
+  }
+  .hero__content {
+    max-width: 560px;
+  }
+  .hero__photo-wrap {
+    aspect-ratio: 1.32;
+  }
+  .hero__visual {
+    max-width: 540px;
+    width: 100%;
+  }
+  .hero__ornament {
+    right: -7px;
+    top: -15px;
+    font-size: 58px;
+  }
+  .hero__care-card {
+    right: 0;
+    padding: 15px 18px;
+  }
+  .hero__trust {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .hero__inner {
+    padding-inline: 20px;
+  }
+  .hero__actions {
+    flex-direction: column;
+  }
+  .hero__caption-title {
+    font-size: 27px;
+  }
+  .hero__photo-caption {
+    left: 23px;
+  }
+  .hero__care-card {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__actions { display: grid; grid-template-columns: 1fr; }
+  .hero__caption-title { font-size: 28px; }
+  .hero__photo-caption { left: 24px; bottom: 60px; }
+}

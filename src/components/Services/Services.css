@@ -1,0 +1,118 @@
+.services {
+  max-width: 1280px;
+  padding: 90px 40px 70px;
+  margin: auto;
+}
+.services__intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 42px;
+}
+.services__intro-text {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 380px;
+  margin: 0 0 4px;
+}
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.services__card {
+  padding: 32px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  background: #fff;
+  transition: background 0.2s;
+}
+.services__card:hover {
+  background: #f7faf8;
+}
+.services__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--mist);
+  border-radius: 10px;
+  color: var(--teal-dark);
+  margin-bottom: 26px;
+}
+.services__category {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--teal-dark);
+  margin: 0 0 8px;
+  font-weight: 650;
+}
+.services__title {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+.services__text {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+.services__evaluation {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  padding: 28px 0;
+}
+.services__evaluation-copy {
+  max-width: 620px;
+}
+.services__evaluation-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+  margin-bottom: 6px;
+}
+.services__evaluation-text {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .services__intro {
+    gap: 30px;
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services__evaluation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .services {
+    padding: 60px 24px 35px;
+  }
+  .services__intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+  .services__card {
+    padding: 28px;
+  }
+}
